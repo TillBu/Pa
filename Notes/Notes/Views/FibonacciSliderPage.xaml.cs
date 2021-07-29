@@ -7,17 +7,29 @@ namespace Notes.Views
 {
     public partial class FibonacciSliderPage : ContentPage
 
-    
+
     {
 
-        int value = 6;
-      
-        
+
+
+
         public FibonacciSliderPage()
-        {       
-            
+        {
+
             InitializeComponent();
-            
+
         }
+
+
+
+        
+        void FibonacciSlider_ValueChanged(System.Object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        {
+            int Stage = (int)Math.Round(FibonacciSlider.Value);
+
+            labelValue.Text = Stage.ToString();
+           
+            
+            }
     }
 }

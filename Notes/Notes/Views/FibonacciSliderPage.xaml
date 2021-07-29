@@ -7,10 +7,11 @@
     <ContentPage.Content>
         
         <StackLayout>
-           <Slider  x:Name="FibonacciSlider" Maximum="12"  />
+           <Slider  x:Name="FibonacciSlider"  Maximum="12" ValueChanged="FibonacciSlider_ValueChanged" 
+                    />
 
-            <Label Text="{Binding Source={x:Reference FibonacciSlider}}" />
-            <Label Text="b" />
+            <Label x:Name="labelValue" Text=""                BindingContext="{x:Reference Name=FibonacciSlider}"/>
+            <Label x:Name="labelFibonacci" Text="b" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
