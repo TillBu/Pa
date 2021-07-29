@@ -11,5 +11,10 @@
         <ShellContent Title="About"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:AboutPage}" />
+        <ShellContent Title="FibonacciSlider"
+                      Icon="icon_about.png"
+                      ContentTemplate="{DataTemplate views:FibonacciSliderPage}" />
+
+
     </TabBar>
 </Shell>

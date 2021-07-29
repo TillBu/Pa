@@ -9,6 +9,7 @@ namespace Notes
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(NoteEntryPage), typeof(NoteEntryPage));
+            Routing.RegisterRoute(nameof(FibonacciSliderPage), typeof(FibonacciSliderPage));
         }
     }
 }
